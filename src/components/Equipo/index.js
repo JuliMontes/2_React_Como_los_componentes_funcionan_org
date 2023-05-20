@@ -1,3 +1,4 @@
+import Colaborador from "../Colaborador"
 import "./Equipo.css"
 
 const Equipo = (props) => {
@@ -11,10 +12,15 @@ const Equipo = (props) => {
     const estiloTitulo = {
         borderColor: colorPrimario
     }
-    
+
     return <section className="equipo" style={fondo}>
         <h3 style={estiloTitulo}>{titulo}</h3>
-        <div className="colaboradores"></div>
+        <div className="colaboradores">
+            <Colaborador />
+            <Colaborador />
+            <Colaborador />
+            <Colaborador />
+        </div>
     </section>
 }
 
