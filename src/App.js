@@ -107,8 +107,11 @@ function App() {
   }
 
   //Eliminar Colaborador
-  const eliminarColaborador = () => {
-    console.log("Eliminar colaborador")
+  const eliminarColaborador = (id) => {
+    console.log("Eliminar colaborador", id)
+    const nuevosColaboradores = colaboradores.filter((colaborador) => colaborador.id !== id)
+    console.log(nuevosColaboradores)
+    actualizarColaboradores(nuevosColaboradores)
   }
 
   //Actualizar color de equipo
