@@ -4,7 +4,7 @@ import "./Equipo.css"
 const Equipo = (props) => {
     //Destructuración
     const { titulo, colorPrimario, colorSecundario } = props.datos
-    const { colaboradores, eliminarColaborador } = props
+    const { colaboradores, eliminarColaborador, actualizarColor } = props
 
     // console.log(colaboradores.length > 0)
 
@@ -24,7 +24,8 @@ const Equipo = (props) => {
                     className="input-color"
                     value={colorSecundario}
                     onChange={(evento) => {
-                        console.log(evento.target.value)
+                        // console.log(evento.target.value)
+                        actualizarColor(evento.target.value, titulo)
                     }}
                 />
                 <h3 style={estiloTitulo}>{titulo}</h3>
