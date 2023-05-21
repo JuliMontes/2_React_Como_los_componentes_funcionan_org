@@ -6,7 +6,7 @@ const Equipo = (props) => {
     const { titulo, colorPrimario, colorSecundario } = props.datos
     const { colaboradores, eliminarColaborador } = props
 
-    console.log(colaboradores.length > 0)
+    // console.log(colaboradores.length > 0)
 
     const fondo = {
         backgroundColor: colorSecundario
@@ -19,6 +19,14 @@ const Equipo = (props) => {
     return <> 
         { colaboradores.length > 0 && 
             < section className = "equipo" style = { fondo } >
+                <input 
+                    type="color"
+                    className="input-color"
+                    value={colorSecundario}
+                    onChange={(evento) => {
+                        console.log(evento.target.value)
+                    }}
+                />
                 <h3 style={estiloTitulo}>{titulo}</h3>
                 <div className="colaboradores">
                     {/* <Colaborador /> */}
