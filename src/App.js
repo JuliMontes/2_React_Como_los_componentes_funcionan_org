@@ -9,7 +9,12 @@ import Footer from './components/Footer';
 
 function App() {
   const [mostrarFormulario, actualizarMostrar] = useState(false)
-  const [colaboradores, actualizarColaboradores] = useState([])
+  const [colaboradores, actualizarColaboradores] = useState([{
+    equipo:"Front End",
+    foto: "https://github.com/harlandlohora.png",
+    nombre: "Harland Lohora",
+    puesto: "Instructor"
+  }])
 
   //Ternario --> condicion ? seMuestra : noSeMuestra
   //Corto circuito --> condicion && seMuestra
