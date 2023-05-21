@@ -4,6 +4,7 @@ import Header from './components/Header/Header.js';
 import Formulario from './components/Formulario/Formulario.js';
 import MiOrg from './components/MiOrg';
 import Equipo from './components/Equipo';
+import Footer from './components/Footer';
 // console.log(Header);
 
 function App() {
@@ -81,6 +82,7 @@ function App() {
         colaboradores={colaboradores.filter( colaborador => colaborador.equipo === equipo.titulo)}
         />)
       }
+      <Footer />
     </div>
   );
 }
