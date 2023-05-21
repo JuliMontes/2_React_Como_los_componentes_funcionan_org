@@ -10,7 +10,7 @@ const Equipo = (props) => {
     // console.log(colaboradores.length > 0)
 
     const fondo = {
-        backgroundColor: hexToRgba(colorPrimario,0.6)
+        backgroundColor: hexToRgba(colorPrimario, 0.6)
     }
 
     const estiloTitulo = {
