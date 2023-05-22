@@ -5,7 +5,7 @@ import "./Equipo.css"
 const Equipo = (props) => {
     //Destructuración
     const { id, titulo, colorPrimario, colorSecundario } = props.datos
-    const { colaboradores, eliminarColaborador, actualizarColor } = props
+    const { colaboradores, eliminarColaborador, actualizarColor, like } = props
 
     // console.log(colaboradores.length > 0)
 
@@ -37,6 +37,7 @@ const Equipo = (props) => {
                         key={index}
                         colorPrimario={colorPrimario}
                         eliminarColaborador={eliminarColaborador}
+                        like={like}
                     />)
                     }
                 </div>
